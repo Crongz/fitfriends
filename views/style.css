@@ -93,8 +93,11 @@ section {
    height: 44px;
    outline: none !important;
 }
+.c-search > .input-group-btn{
+  border-bottom-width: 1px;
+}
 .c-search > .form-control:focus {
-    outline:0px !important;
+    outline:0px ;
     -webkit-appearance:none;
     box-shadow: none;
 }
