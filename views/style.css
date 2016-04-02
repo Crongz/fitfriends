@@ -34,3 +34,10 @@ body {
 code {
   font-size: 80%;
 }
+
+/* main page header */
+#jumbotron {
+  text-align: center;
+  height: 600px;
+  padding-top: 12%;
+}
