@@ -69,3 +69,7 @@ header .navbar-nav a {
    border-bottom-width: 1px;
    height: 44px;
 }
+.contact-list {
+  max-height: 600px;
+  overflow-y:scroll;
+}
