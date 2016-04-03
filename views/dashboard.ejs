@@ -8,6 +8,13 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<link href="stylesheets/style.css" rel="stylesheet">
+
+	<!-- Load c3.css -->
+	<link href="stylesheets/c3.css" rel="stylesheet">
+	
+	<!-- Load d3.js and c3.js -->
+	<script src="javascripts/d3.min.js" charset="utf-8"></script>
+	<script src="javascripts/c3.min.js"></script>
 </head>
 <body>
 	<!-- Put navbar in default.html -->
@@ -66,15 +73,49 @@
 				</div>
 			</div>
 			<div class="col-md-4">
-				
+				<br>
+				<div id="chart"></div>
 			</div>
 		</div>
 	</div>
 
 	<footer class="footer">
-	<div class="container">
-		<p class="text-muted">Place sticky footer content here.</p>
-	</div>
+		<div class="container">
+			<p class="text-muted">Place sticky footer content here.</p>
+		</div>
 	</footer>
+
+	<script type="text/javascript"></script>
+	<script type="text/javascript">
+	var chart = c3.generate({
+		bindto: '#chart',
+		title: {
+			text: 'Title'
+		},
+		data: {
+			columns: [
+				['Progress', 30, 200, 100, 400, 150, 250, 60]
+			]
+		},
+		axis: {
+        	y: {
+        	    max: 500,
+        	    min: 0,
+        	    // Range includes padding, set 0 if no padding needed
+        	    // padding: {top:0, bottom:0}
+        	}
+    	},
+    	legend: {
+        	show: false
+    	}
+	});
+
+	d3.select('#chart svg').append('text')
+		.attr('x', d3.select('#chart svg').node().getBoundingClientRect().width / 2)
+		.attr('y', 15)
+		.attr('text-anchor', 'middle')
+		.style('font-size', '1.4em')
+		.text('Progress of the week')
+	</script>
 </body>
 </html>
