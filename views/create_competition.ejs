@@ -26,16 +26,10 @@
 
 <body>
 	<% include partials/header %>
-
 	<div class="container">
-
 		<h1> <b> Create Competition </b> </h1>
-		<br>
-		<br>
-
-
+		<br><br>
 			<form class="form-horizontal" >
-
 	  			<div class="form-group form-group"  >
 	    			<label class="col-sm-3 control-label" for="formGroupInput">Competition Name
 	    			</label>
@@ -63,10 +57,12 @@
 				<div class="form-group form-group">
 	    			<label class="col-sm-3 control-label" for="formGroupInput">Set Date
 	    			</label>
-	    			<div class="col-sm-5">
-	      				<input class="form-control" type="text" id="formGroupInputLarge" placeholder="Start Date">
-	      				<input class="form-control" type="text" id="formGroupInputLarge" placeholder="End Date">
-	   		 		</div>
+						<div class="col-xs-2">
+							<input class="form-control" type="text" id="formGroupInputLarge" placeholder="Start Date">
+						</div>
+						<div class="col-xs-2">
+							<input class="form-control" type="text" id="formGroupInputLarge" placeholder="End Date">
+						</div>
 	  			</div>
 
 	  			<div class="form-group form-group">
@@ -89,7 +85,7 @@
     				</label>
   				</div>
 
-  				<br> 
+  				<br>
 	  			<div class="input-group col-sm-5" id="invite_button">
 
   						<span class="input-group-addon" id="basic-addon1">+</span>
@@ -97,18 +93,15 @@
 				</div>
 				<br>
 
-	  			<div class="checkbox">
-    				<label>
-      				<input type="checkbox"> Guest can invite friends
-    				</label>
-  				</div>
-
-  			</form>
-
-
-  			<br>
-  		<button type="submit" class="btn btn-default" margin-left="100px">Cancel</button>
-		<button type="submit" class="btn btn-primary" margin-left="100px">Create</button>
+  			<div class="checkbox">
+  				<label>
+    				<input type="checkbox"> Guest can invite friends
+  				</label>
+				</div>
+				<button type="submit" class="btn btn-default" margin-left="100px">Cancel</button>
+				<button type="submit" class="btn btn-primary" margin-left="100px">Create</button>
+  		</form>
+  		<br>
 	</div>
 	<% include partials/footer %>
 </body>
