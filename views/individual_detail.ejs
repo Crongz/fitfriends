@@ -9,9 +9,11 @@
 
 	<div class="container">
 		<div class="row">
+			<h2>Title of the competition</h2>
+			<h4>Date: Feb 15, 2016 ~ Mar 15, 2016</h4>
+		</div>
+		<div class="row">
 			<div class="col-md-8">
-				<h2>Title of the competition</h2>
-        <h4>Date: Feb 15, 2016 ~ Mar 15, 2016</h4>
         <div class="row-fluid" style="margin-top:5%">
           <div id="chart"></div>
         </div>
@@ -128,15 +130,11 @@
         </div>
       </div>
   	</div>
-    <script src="http://rawgit.com/stidges/jquery-searchable/master/dist/jquery.searchable-1.0.0.min.js"></script>
   </div>
 
-	<footer class="footer">
-  	<div class="container">
-  		<p class="text-muted">Place sticky footer content here.</p>
-  	</div>
-	</footer>
-
+	<% include partials/footer %>
+	
+	<script src="http://rawgit.com/stidges/jquery-searchable/master/dist/jquery.searchable-1.0.0.min.js"></script>
   <script type="text/javascript">
   	$(function () {
       /* BOOTSNIPP FULLSCREEN FIX */
@@ -180,33 +178,33 @@
       })
   });
 
-var chart = c3.generate({
-  bindto: '#chart',
-  title: {
-    text: 'Title'
-  },
-  data: {
-    columns: [
-    ['Progress', 30, 200, 100, 400, 150, 250, 60]
-    ],
-    type: 'bar'
-  },
-  axis: {
-    x: {
-      type: 'category',
-      categories: ['Scott Stevens', 'Seth Frazier', 'Jean Myers', 'Todd Shelton', 'Rosemary Porter', 'Debbie Schmidt', 'Glenda Patterson']
-    },
-    y: {
-      max: 600,
-      
-              // Range includes padding, set 0 if no padding needed
-              // padding: {top:0, bottom:0}
-            }
-          },
-          legend: {
-            show: false
-          }
-        });
+	var chart = c3.generate({
+	  bindto: '#chart',
+	  title: {
+	    text: 'Title'
+	  },
+	  data: {
+	    columns: [
+	    ['Progress', 30, 200, 100, 400, 150, 250, 60]
+	    ],
+	    type: 'bar'
+	  },
+	  axis: {
+	    x: {
+	      type: 'category',
+	      categories: ['Scott Stevens', 'Seth Frazier', 'Jean Myers', 'Todd Shelton', 'Rosemary Porter', 'Debbie Schmidt', 'Glenda Patterson']
+	    },
+	    y: {
+	      max: 600,
+
+	              // Range includes padding, set 0 if no padding needed
+	              // padding: {top:0, bottom:0}
+	            }
+	          },
+	          legend: {
+	            show: false
+	          }
+	        });
 	</script>
 
 </body>

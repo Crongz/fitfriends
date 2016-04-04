@@ -2,40 +2,39 @@
 <html>
 <head>
 	<% include partials/head %>
+	<style type="text/css">
 
-	 <style type="text/css">
-    
-    	.btn.btn-default{
-    		margin-left: 610px;
+		.btn.btn-default{
+			margin-left: 610px;
 
-    	}
+		}
 
-    	h1{
-    		margin-left: 15px;
-    	}
+		h1{
+			margin-left: 15px;
+		}
 
-    	#invite_button{
-    		margin-left: 293px;
-    		padding-right: 18px;
-    	}
+		#invite_button{
+			margin-left: 293px;
+			padding-right: 18px;
+		}
 
-    	.checkbox{
-    		margin-left: 295px;
-    	}
-    </style>
-
+		.checkbox{
+			margin-left: 295px;
+		}
+	</style>
 </head>
+
 <body>
 	<% include partials/header %>
 
 	<div class="container">
 
-		<h1> <b> Create Competition </b> </h1>	
+		<h1> <b> Create Competition </b> </h1>
 		<br>
 		<br>
-			
-    	
-			<form class="form-horizontal" >   
+
+
+			<form class="form-horizontal" >
 
 	  			<div class="form-group form-group"  >
 	    			<label class="col-sm-3 control-label" for="formGroupInput">Competition Name
@@ -79,9 +78,9 @@
 	  			</div>
 
 	  			<div class="input-group col-sm-5" id="invite_button">
-	  					
+
   						<span class="input-group-addon" id="basic-addon1">+</span>
-  						<input type="text" class="form-control" placeholder="Add Members" aria-describedby="basic-addon1">  					
+  						<input type="text" class="form-control" placeholder="Add Members" aria-describedby="basic-addon1">
 				</div>
 				<br>
 
@@ -93,11 +92,11 @@
 
   			</form>
 
-  			
+
   			<br>
   		<button type="submit" class="btn btn-default" margin-left="100px">Cancel</button>
 		<button type="submit" class="btn btn-primary" margin-left="100px">Create</button>
-		
 	</div>
+	<% include partials/footer %>
 </body>
 </html>

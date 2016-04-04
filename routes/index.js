@@ -30,8 +30,8 @@ router.get('/login', function(req, res, next) {
   res.render('login');
 });
 
-router.get('/makeCommunity', function(req, res, next) {
-  res.render('makeCommunity');
+router.get('/create_community', function(req, res, next) {
+  res.render('create_community');
 });
 
 router.get('/profile', function(req, res, next) {
