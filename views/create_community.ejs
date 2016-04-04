@@ -20,42 +20,40 @@
 		</div>
 
 		<br>
-		<!community name>
-
-		<div class="form-horizontal">
-			<form class="form-group">
-				<div>
+		<div class="row">
+		<form class="form-horizontal">
+			<div class="form-group">
 					<label for="inputEmail3" class="col-sm-2 control-label col-md-offset-2">Community Name</label>
 					<div class="col-xs-4">
 						<input type="text" class="form-control" placeholder="Community Name">
 					</div>
-				</div>
-			</form>
-			<!description>
-			<form class="form-group">
-				<div>
+			</div>
+			<div class="form-group">
 					<label for="inputEmail3" class="col-sm-2 control-label col-md-offset-2">Desscription</label>
 					<div class="col-xs-4">
 						<textarea class="form-control" rows="3" placeholder="Description"></textarea>
 					</div>
-				</div>
-			</form>
-			<!invite people>
-			<form class="form-group">
-				<div>
+			</div>
+			<div class="form-group">
 					<label for="inputEmail3" class="col-sm-2 control-label col-md-offset-2">Invite Friends</label>
 					<div class="col-xs-4">
-						<div class="input-group input-group-lg">
+						<div class="input-group input-group-md">
 							<span class="input-group-addon" id="sizing-addon1">+</span>
 							<input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
 						</div>
-
+					</div>
+			</div>
+			<div class="form-group">
+				<label for="inputEmail3" class="col-sm-2 control-label col-md-offset-2"></label>
+				<div class="col-xs-4">
+					<div class="pull-right">
+						<button type="submit" class="btn btn-primary">Create</button>
+						<button type="submit" class="btn btn-default">Cancel</button>
 					</div>
 				</div>
-			</form>
+			</div>
+		</form>
 		</div>
-		<button type="submit" class="btn btn-default col-md-offset-7" margin-left="100px">Cancel</button>
-		<button type="submit" class="btn btn-primary" margin-left="100px">Submit</button>
 	</div>
 	<% include partials/footer %>
 </body>

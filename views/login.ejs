@@ -1,53 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<% include partials/head %>
-	</head>
+	<% include partials/head %>
+</head>
 
 	<body>
-		<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="home">Home</a></li>
+					<li><a href="index">Home</a></li>
 					<li><a href="signin">Sign Up</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
+
 	<div class="container">
 		<div class="row">
   		<div class="col-md-8 col-md-offset-1"><h1><b>Log in<br><small>Compete against your friends</small></b></h1></div>
-  		<br> <br>
 		</div>
-	<br />
+		<br/>
 
-	<div class="form-horizontal">
-		<form class="form-group">
-				<div>
-	    			<label for="inputEmail3" class="col-sm-2 control-label col-md-offset-2">Email</label>
-	    			<div class="col-xs-4">
-	   					<input type="text" class="form-control" placeholder="Email">
-					</div>
-	  			</div>
-  		</form>
+		<form role="form" class="form-horizontal">
+			<div class="form-group">
+				<label for="inputEmail3" class="col-sm-2 control-label col-md-offset-2">Email</label>
+				<div class="col-xs-4">
+	 				<input type="text" class="form-control" placeholder="Email">
+				</div>
+			</div>
 
-		<form class="form-group">
-			<div>
+			<div class="form-group">
 				<label for="inputEmail3" class="col-sm-2 control-label col-md-offset-2">Password</label>
 				<div class="col-xs-4">
 					<input type="text" class="form-control" placeholder="Password">
-					</div>
 				</div>
-		</form>
+			</div>
 
-		<br>
 			<div class="form-group">
-			<div class="col-sm-offset-5 col-sm-10">
-					<button type="submit" class="btn btn-default">Sign Up</button>
+				<div class="col-sm-offset-5 col-sm-10">
+						<button type="submit" class="btn btn-default">Log in</button>
+				</div>
 			</div>
-			</div>
-		</div>
+		</form>
 	</div>
 	<% include partials/footer %>
 	</body>
