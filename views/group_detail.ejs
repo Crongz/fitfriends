@@ -301,15 +301,11 @@ var chart = c3.generate({
   },
   data: {
     columns: [
-    ['Progress', 30, 200, 100, 400, 150, 250, 60]
-    ],
-    type: 'bar'
+    ['Group 1', 30, 200, 100, 400, 150, 250, 60],
+    ['Group 2', 50, 35, 200, 70, 350, 300, 100]
+    ]
   },
   axis: {
-    x: {
-      type: 'category',
-      categories: ['Scott Stevens', 'Seth Frazier', 'Jean Myers', 'Todd Shelton', 'Rosemary Porter', 'Debbie Schmidt', 'Glenda Patterson']
-    },
     y: {
       max: 600,
       
@@ -318,7 +314,7 @@ var chart = c3.generate({
             }
           },
           legend: {
-            show: false
+            show: true
           }
         });
 </script>
