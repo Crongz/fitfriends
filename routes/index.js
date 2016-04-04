@@ -46,4 +46,8 @@ router.get('/create_competition', function(req, res, next) {
   res.render('create_competition');
 });
 
+router.post('user', function (req, res) {
+  res.render('dashboard');
+});
+
 module.exports = router;
