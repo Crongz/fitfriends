@@ -42,4 +42,8 @@ router.get('/signin', function(req, res, next) {
   res.render('signin');
 });
 
+router.get('/create_competition', function(req, res, next) {
+  res.render('create_competition');
+});
+
 module.exports = router;
