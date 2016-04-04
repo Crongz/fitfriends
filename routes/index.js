@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('home');
+  res.render('index');
 });
 
 router.get('/dashboard', function(req, res, next) {
@@ -16,10 +16,6 @@ router.get('/community', function(req, res, next) {
 
 router.get('/group_detail', function(req, res, next) {
   res.render('group_detail');
-});
-
-router.get('/home', function(req, res, next) {
-  res.render('home');
 });
 
 router.get('/individual_detail', function(req, res, next) {

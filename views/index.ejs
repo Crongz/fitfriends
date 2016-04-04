@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<head>
+	<% include partials/head %>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top" style="background-color:transparent; border-color:transparent">
+    <div class="container">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login" role="button">Login</a></li>
+        <li><a href="signin" role="button">Sign up</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <div class="header-content">
+			<div class="header-content-inner">
+				<h1>Welcome to Fit Friends</h1>
+				<p>A fun way to exercise and build healthy habits.</p>
+			</div>
+		</div>
+  </header>
+
+
+  <section style="background-color:#2B5E9A; color: white; padding:90px">
+    <h1>Why Fit Friends?</h1>
+    <br>
+    <p style="font-size:18px; padding-left: 100px; padding-right: 100px">
+      We want to make exercise a social activity and provide an aspect
+      of competition to encourage people to get active. Fit Friends provides
+      fun ways to get active on your own or with your friends. Our goal is to
+      help you achieve your goals, whether you are by yourself, with some friends,
+      or on a team.</p>
+    <br>
+    <button type="button" class="btn btn-default btn-lg" style="border:none; color:#2B5E9A">Get Started</button>
+  </section>
+
+  <section>
+    <h1>What can you do with Fit Friends?</h1>
+    <br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <i class="fa fa-star-o fa-4x" style="color: #2B5E9A"></i>
+          <p></p><br>
+          <p>Set personal goals and earn badges for your achievements.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fa fa-user fa-4x" style="color: #2B5E9A"></i>
+          <p></p><br>
+          <p>Set goals with a group of friends, and compete to see who can be the most active.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fa fa-users fa-4x" style="color: #2B5E9A"></i>
+          <p></p><br>
+          <p>Compete with a team of friends against other teams in a fitness challenge.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+	<% include partials/footer %>
+</body>
 </html>
