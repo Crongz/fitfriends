@@ -84,30 +84,7 @@ section {
 
 /* Search people CSS
 -------------------------------------------------- */
-.c-search > .form-control {
-   border-radius: 0px;
-   border-width: 0px;
-   border-bottom-width: 1px;
-   font-size: 1.3em;
-   padding: 12px 12px;
-   height: 44px;
-   outline: none !important;
-}
-.c-search > .input-group-btn{
-  border-bottom-width: 1px;
-}
-.c-search > .form-control:focus {
-    outline:0px ;
-    -webkit-appearance:none;
-    box-shadow: none;
-}
-.c-search > .input-group-btn .btn {
-   border-radius: 0px;
-   border-width: 0px;
-   border-left-width: 1px;
-   border-bottom-width: 1px;
-   height: 44px;
-}
+
 .contact-list {
   max-height: 600px;
   overflow-y:scroll;

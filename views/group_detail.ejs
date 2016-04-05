@@ -139,17 +139,17 @@
                       <span class="input-group-btn">
                         <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
                       </span>
-                      <input type="text" class="form-control" id="contact-list-search" placeholder="Search for...">
+                      <input type="text" class="form-control" id="group2-list-search" placeholder="Search for...">
                     </div>
                   </div>
                 </div>
-                <ul class="list-group contact-list" id="contact-list">
+                <ul class="list-group contact-list" id="group2-list">
                   <li class="list-group-item">
                     <div class="col-xs-12 col-sm-3">
-                      <img src="http://api.randomuser.me/portraits/men/8.jpg" alt="Scott Stevens" class="img-responsive img-circle" />
+                      <img src="http://api.randomuser.me/portraits/men/3.jpg" alt="Scott Stevens" class="img-responsive img-circle" />
                     </div>
                     <div class="col-xs-12 col-sm-9">
-                      <span class="name">Scott Stevens</span>
+                      <span class="name">James Stevens</span>
                       <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip" title="5020 Poplar Dr"></span>
                       <span class="visible-xs"> <span class="text-muted">5020 Poplar Dr</span></span>
                     </div>
@@ -160,7 +160,7 @@
                       <img src="http://api.randomuser.me/portraits/men/27.jpg" alt="Seth Frazier" class="img-responsive img-circle" />
                     </div>
                     <div class="col-xs-12 col-sm-9">
-                      <span class="name">Seth Frazier</span>
+                      <span class="name">Angela Frazier</span>
                       <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip" title="5020 Poplar Dr"></span>
                       <span class="visible-xs"> <span class="text-muted">5020 Poplar Dr</span></span>
                     </div>
@@ -171,7 +171,7 @@
                       <img src="http://api.randomuser.me/portraits/women/14.jpg" alt="Jean Myers" class="img-responsive img-circle" />
                     </div>
                     <div class="col-xs-12 col-sm-9">
-                      <span class="name">Jean Myers</span>
+                      <span class="name">Shannon Myers</span>
                       <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip" title="5020 Poplar Dr"></span>
                       <span class="visible-xs"> <span class="text-muted">5020 Poplar Dr</span></span>
                     </div>
@@ -182,7 +182,7 @@
                       <img src="http://api.randomuser.me/portraits/men/88.jpg" alt="Todd Shelton" class="img-responsive img-circle" />
                     </div>
                     <div class="col-xs-12 col-sm-9">
-                      <span class="name">Todd Shelton</span>
+                      <span class="name">Nick Shelton</span>
                       <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip" title="5020 Poplar Dr"></span>
                       <span class="visible-xs"> <span class="text-muted">5020 Poplar Dr</span></span>
                     </div>
@@ -193,7 +193,7 @@
                       <img src="http://api.randomuser.me/portraits/women/69.jpg" alt="Rosemary Porter" class="img-responsive img-circle" />
                     </div>
                     <div class="col-xs-12 col-sm-9">
-                      <span class="name">Rosemary Porter</span>
+                      <span class="name">Vanessa Porter</span>
                       <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip" title="5020 Poplar Dr"></span>
                       <span class="visible-xs"> <span class="text-muted">5020 Poplar Dr</span></span>
                     </div>
@@ -204,7 +204,7 @@
                       <img src="http://api.randomuser.me/portraits/women/2.jpg" alt="Debbie Schmidt" class="img-responsive img-circle" />
                     </div>
                     <div class="col-xs-12 col-sm-9">
-                      <span class="name">Debbie Schmidt</span>
+                      <span class="name">Tebbie Schmidt</span>
                       <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip" title="5020 Poplar Dr"></span>
                       <span class="visible-xs"> <span class="text-muted">5020 Poplar Dr</span></span>
                     </div>
@@ -235,71 +235,80 @@
 <% include partials/footer %>
 
 <script type="text/javascript">
-$(function () {
-  /* BOOTSNIPP FULLSCREEN FIX */
-  if (window.location == window.parent.location) {
-    $('#back-to-bootsnipp').removeClass('hide');
-  }
+	$(function () {
+	  /* BOOTSNIPP FULLSCREEN FIX */
+	  if (window.location == window.parent.location) {
+	    $('#back-to-bootsnipp').removeClass('hide');
+	  }
 
 
-  $('[data-toggle="tooltip"]').tooltip();
+	  $('[data-toggle="tooltip"]').tooltip();
 
-  $('#fullscreen').on('click', function(event) {
-    event.preventDefault();
-    window.parent.location = "http://bootsnipp.com/iframe/4l0k2";
-  });
-  $('a[href="#cant-do-all-the-work-for-you"]').on('click', function(event) {
-    event.preventDefault();
-    $('#cant-do-all-the-work-for-you').modal('show');
-  })
+	  $('#fullscreen').on('click', function(event) {
+	    event.preventDefault();
+	    window.parent.location = "http://bootsnipp.com/iframe/4l0k2";
+	  });
+	  $('a[href="#cant-do-all-the-work-for-you"]').on('click', function(event) {
+	    event.preventDefault();
+	    $('#cant-do-all-the-work-for-you').modal('show');
+	  })
 
-  $('[data-command="toggle-search"]').on('click', function(event) {
-    event.preventDefault();
-    $(this).toggleClass('hide-search');
+	  $('[data-command="toggle-search"]').on('click', function(event) {
+	    event.preventDefault();
+	    $(this).toggleClass('hide-search');
 
-    if ($(this).hasClass('hide-search')) {
-      $('.c-search').closest('.row').slideUp(100);
-    }else{
-      $('.c-search').closest('.row').slideDown(100);
+	    if ($(this).hasClass('hide-search')) {
+	      $('.c-search').closest('.row').slideUp(100);
+	    }else{
+	      $('.c-search').closest('.row').slideDown(100);
+	    }
+		})
+
+	  $('#contact-list').searchable({
+	    searchField: '#contact-list-search',
+	    selector: 'li',
+	    childSelector: '.col-xs-12',
+	    show: function( elem ) {
+	      elem.slideDown(100);
+	    },
+	    hide: function( elem ) {
+	      elem.slideUp( 100 );
+	    }
+	  })
+
+		$('#group2-list').searchable({
+	    searchField: '#group2-list-search',
+	    selector: 'li',
+	    childSelector: '.col-xs-12',
+	    show: function( elem ) {
+	      elem.slideDown(100);
+	    },
+	    hide: function( elem ) {
+	      elem.slideUp( 100 );
+	    }
+	  })
+	});
+
+	var chart = c3.generate({
+	  bindto: '#chart',
+	  title: {
+	    text: 'Title'
+	  },
+	  data: {
+	    columns: [
+	    ['Group 1', 30, 200, 100, 400, 150, 250, 60],
+	    ['Group 2', 50, 35, 200, 70, 350, 300, 100]
+	    ]
+	  },
+	  axis: {
+	    y: {
+	    max: 600,
+	    }
+	  },
+    legend: {
+      show: true
     }
-  })
-
-  $('#contact-list').searchable({
-    searchField: '#contact-list-search',
-    selector: 'li',
-    childSelector: '.col-xs-12',
-    show: function( elem ) {
-      elem.slideDown(100);
-    },
-    hide: function( elem ) {
-      elem.slideUp( 100 );
-    }
-  })
-});
-
-var chart = c3.generate({
-  bindto: '#chart',
-  title: {
-    text: 'Title'
-  },
-  data: {
-    columns: [
-    ['Group 1', 30, 200, 100, 400, 150, 250, 60],
-    ['Group 2', 50, 35, 200, 70, 350, 300, 100]
-    ]
-  },
-  axis: {
-    y: {
-      max: 600,
-
-              // Range includes padding, set 0 if no padding needed
-              // padding: {top:0, bottom:0}
-            }
-          },
-          legend: {
-            show: true
-          }
-        });
+	});
 </script>
 
 </body>
