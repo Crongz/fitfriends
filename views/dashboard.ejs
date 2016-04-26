@@ -50,6 +50,7 @@
 
 			<div class="col-md-5">
 				<br>
+				<h4 class="text-center">Progress of the week</h4>
 				<div id="chart"></div>
 			</div>
 		</div>
@@ -88,28 +89,30 @@
 		},
 		data: {
 			columns: [
-				['Progress', 30, 200, 100, 400, 150, 250, 60]
+				['Progress', 4000, 2000, 1000, 4000, 1500, 2500, 6000]
 			]
 		},
 		axis: {
         	y: {
-        	    max: 500,
+        		label: {
+        			text: 'Steps',
+        			position: 'outer-middle'
+        		},
+        	    max: 10000,
         	    min: 0,
         	    // Range includes padding, set 0 if no padding needed
         	    padding: {top:0, bottom:0}
+        	},
+
+        	x: {
+        		type: 'category',
+        		categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat']
         	}
     	},
     	legend: {
         	show: false
     	}
 	});
-
-	d3.select('#chart svg').append('text')
-		.attr('x', d3.select('#chart svg').node().getBoundingClientRect().width / 2)
-		.attr('y', 15)
-		.attr('text-anchor', 'middle')
-		.style('font-size', '1.4em')
-		.text('Progress of the week')
 	</script>
 </body>
 </html>
