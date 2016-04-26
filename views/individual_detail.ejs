@@ -184,7 +184,7 @@
 	  },
 	  data: {
 	    columns: [
-	    ['Progress', 30, 200, 100, 400, 150, 250, 60]
+	    ['Progress', 3000, 2000, 1000, 4000, 5000, 2500, 6000]
 	    ],
 	    type: 'bar'
 	  },
@@ -194,10 +194,14 @@
 	      categories: ['Scott Stevens', 'Seth Frazier', 'Jean Myers', 'Todd Shelton', 'Rosemary Porter', 'Debbie Schmidt', 'Glenda Patterson']
 	    },
 	    y: {
-	      max: 600,
+        label: {
+          text: 'Steps',
+          position: 'outer-middle'
+        },
+	      max: 12000,
 
 	              // Range includes padding, set 0 if no padding needed
-	              // padding: {top:0, bottom:0}
+	              padding: {top:0, bottom:0}
 	            }
 	          },
 	          legend: {
