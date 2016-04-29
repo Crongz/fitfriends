@@ -2,106 +2,131 @@
 <html>
 <head>
 	<% include partials/head %>
-	<style type="text/css">
-
-		.btn.btn-default{
-			margin-left: 610px;
-
-		}
-
-		h1{
-			margin-left: 15px;
-		}
-
-		#invite_button{
-			margin-left: 293px;
-			padding-right: 18px;
-		}
-
-		.checkbox{
-			margin-left: 295px;
-		}
-	</style>
 </head>
 
 <body>
 	<% include partials/header %>
 	<div class="container">
-		<h1> <b> Create Competition </b> </h1>
+		<h1><b> Create Competition </b></h1>
 		<br><br>
-			<form class="form-horizontal" >
-	  			<div class="form-group form-group"  >
-	    			<label class="col-sm-3 control-label" for="formGroupInput">Competition Name
-	    			</label>
-	    			<div class="col-sm-5">
-	      				<input class="form-control" type="text" id="formGroupInputLarge" placeholder="Competition Name">
-	   		 		</div>
-	  			</div>
+		<div class="container">
+		<form class="form-horizontal">
+		<fieldset>
 
-	  			<div class="form-group form-group">
-	    			<label class="col-sm-3 control-label" for="formGroupInput">Description
-	    			</label>
-	    			<div class="col-sm-5">
-	      				<input class="form-control" type="text" id="formGroupInputLarge" placeholder="Description">
-	   		 		</div>
-	  			</div>
+		<!-- Text input-->
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="textinput">Competition Name</label>
+		  <div class="col-md-4">
+		  <input id="textinput" name="textinput" type="text" placeholder="Competition Name" class="form-control input-md">
 
-	  			<div class="form-group form-group">
-	    			<label class="col-sm-3 control-label" for="formGroupInput">Goal
-	    			</label>
-	    			<div class="col-sm-5">
-	      				<input class="form-control" type="text" id="formGroupInputLarge" placeholder="Goal">
-	   		 		</div>
-	  			</div>
+		  </div>
+		</div>
 
-				<div class="form-group form-group">
-	    			<label class="col-sm-3 control-label" for="formGroupInput">Set Date
-	    			</label>
-						<div class="col-xs-2">
-							<input class="form-control" type="text" id="formGroupInputLarge" placeholder="Start Date">
+		<!-- Text input-->
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="textinput">Start Date</label>
+		  <div class="col-md-4">
+				<form action="action_page.php">
+					<input name="textinput" type="date" placeholder="Start Date" class="form-control input-md">
+				</form>
+		  </div>
+		</div>
+
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="textinput">End Date</label>
+		  <div class="col-md-4">
+				<form action="action_page.php">
+					<input name="textinput" type="date" placeholder="End Date" class="form-control input-md">
+				</form>
+			</div>
+		</div>
+
+		<!-- Text input-->
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="textinput">Goal</label>
+		  <div class="col-md-4">
+		  <input id="textinput" name="textinput" type="text" placeholder="Goal" class="form-control input-md">
+
+		  </div>
+		</div>
+
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="selectbasic">Charity</label>
+		  <div class="col-md-4">
+		    <select id="selectbasic" name="selectbasic" class="form-control">
+					<option value="Other">Other</option>
+		      <option value="A Child's Wish Association of America">A Child's Wish Association of America</option>
+		      <option value="AMVETS National Headquarters">AMVETS National Headquarters</option>
+					<option value="Asian American Legal Defense & Education Fund">Asian American Legal Defense & Education Fund</option>
+					<option value="Human Rights Campaign">AHuman Rights Campaign</option>
+					<option value="Law Enforcement Legal Defense Fund">Law Enforcement Legal Defense Fund</option>
+		    </select>
+		  </div>
+		</div>
+
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="selectbasic">Set Incentive</label>
+		  <div class="col-md-4">
+				<input id="textinput" name="textinput" type="text" placeholder="Incentive" class="form-control input-md">
+		  </div>
+		</div>
+
+		<!-- Textarea -->
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="textarea">Description</label>
+		  <div class="col-md-4">
+		    <textarea class="form-control" id="textarea" name="textarea" placeholder="Description"></textarea>
+		  </div>
+		</div>
+
+		<div class="form-group">
+			<div class="panel with-nav-tabs col-md-4 col-md-offset-4">
+			<div class="panel-heading">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#tab1default" data-toggle="tab">Individual competition</a></li>
+					<li><a href="#tab2default" data-toggle="tab">Group competition</a></li>
+				</ul>
+			</div>
+			<div class="panel-body">
+				<div class="tab-content">
+					<div class="tab-pane fade in active" id="tab1default">
+						<div class="input-group">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-plus"></span></span>
+								<input type="text" class="form-control" placeholder="Name" aria-describedby="sizing-addon2">
 						</div>
-						<div class="col-xs-2">
-							<input class="form-control" type="text" id="formGroupInputLarge" placeholder="End Date">
+					</div>
+					<div class="tab-pane fade" id="tab2default">
+						<div class="input-group">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-plus"></span> Group1</span>
+								<input type="text" class="form-control" placeholder="Name" aria-describedby="sizing-addon2">
 						</div>
-	  			</div>
-
-	  			<div class="form-group form-group">
-	    			<label class="col-sm-3 control-label" for="formGroupInput">Set Incentive
-	    			</label>
-	    			<div class="col-sm-5">
-	      				<input class="form-control" type="text" id="formGroupInputLarge" placeholder="Set Incentive">
-	   		 		</div>
-	  			</div>
-
-	  			<div class="checkbox">
-    				<label>
-      				<input type="checkbox"> Individual Competition
-    				</label>
-  				</div>
-
-  				<div class="checkbox">
-    				<label>
-      				<input type="checkbox"> Group Competition
-    				</label>
-  				</div>
-
-  				<br>
-	  			<div class="input-group col-sm-5" id="invite_button">
-
-  						<span class="input-group-addon" id="basic-addon1">+</span>
-  						<input type="text" class="form-control" placeholder="Add Members" aria-describedby="basic-addon1">
+						<br>
+						<div class="input-group">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-plus"></span> Group2</span>
+								<input type="text" class="form-control" placeholder="Name" aria-describedby="sizing-addon2">
+						</div>
+					</div>
 				</div>
-				<br>
+			</div>
+		</div>
+		</div>
 
-  			<div class="checkbox">
-  				<label>
-    				<input type="checkbox"> Guest can invite friends
-  				</label>
-				</div>
-				<button type="submit" class="btn btn-default" margin-left="100px">Cancel</button>
-				<button type="submit" class="btn btn-primary" margin-left="100px">Create</button>
-  		</form>
-  		<br>
+
+
+
+		<!-- Button -->
+		<div class="form-group">
+		  <label class="col-md-5 control-label" for="singlebutton"></label>
+		  <div class="col-md-5 pull-right">
+		    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Create</button>
+				<button id="singlebutton" name="singlebutton" class="btn btn-danger">Cancel</button>
+		  </div>
+		</div>
+
+		</fieldset>
+		</form>
+
+		</div>
 	</div>
 	<% include partials/footer %>
 </body>
