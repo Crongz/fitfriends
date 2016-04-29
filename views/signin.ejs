@@ -6,21 +6,22 @@
 
 <body>
 	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="index">Home</a></li>
-					<li><a href="login">Login</a></li>
-				</ul>
-			</div>
-		</div>
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="index">Fit Friends</a>
+	    </div>
+	    <ul class="nav navbar-nav navbar-right">
+				<li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	    </ul>
+	  </div>
 	</nav>
+
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6 col-sm-offset-3"><h1><b>Sign up<br><small>Compete against your friends</small></b></h1></div>
 		</div>
 		<br>
-		<form role="form" class="form-horizontal col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+		<form role="form" action="dashboard"class="form-horizontal col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
 			<div class="form-group">
 				<label for="inputName" class="col-sm-4 control-label">First Name</label>
 				<div class="col-sm-7">
@@ -38,7 +39,7 @@
 			<div class="form-group">
 				<label for="inputEmail" class="col-sm-4 control-label">Email</label>
 				<div class="col-sm-7">
-					<input type="text" class="form-control" placeholder="Email" required>
+					<input class="form-control" type="email" placeholder="Email" required>
 				</div>
 			</div>
 
@@ -79,7 +80,8 @@
 			<br>
 			<div class="form-group">
 				<div class="col-sm-offset-4 col-sm-10">
-					<a href="/dashboard" class="btn btn-primary" role="button">Sign Up</a>
+					<button type="submit" class="btn btn-primary">Sign Up</button>
+					<a href="/index" class="btn btn-danger" role="button">Cancel</a>
 				</div>
 			</div>
 		</form>
