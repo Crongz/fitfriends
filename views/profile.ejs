@@ -30,12 +30,12 @@
 	    </div>
 
 	    <div class="col-md-7">
-				<form class="form-horizontal">
+				<form class="form-horizontal" action="/dashboard">
 		  			<div class="form-group">
 		    			<label class="col-sm-3 control-label" for="formGroupInput">First Name
 		    			</label>
 		    			<div class="col-sm-5">
-		      				<input class="form-control" type="text" id="formGroupInputLarge" placeholder="First Name">
+		      				<input class="form-control" type="text" id="formGroupInputLarge" value="Caitlyn" placeholder="First Name">
 		   		 		</div>
 		  			</div>
 
@@ -43,7 +43,7 @@
 		    			<label class="col-sm-3 control-label" for="formGroupInput">Last Name
 		    			</label>
 		    			<div class="col-sm-5">
-		      				<input class="form-control" type="text" id="formGroupInputLarge" placeholder="Last Name">
+		      				<input class="form-control" type="text" id="formGroupInputLarge" value="Lee" placeholder="Last Name">
 		   		 		</div>
 		  			</div>
 
@@ -51,23 +51,7 @@
 		    			<label class="col-sm-3 control-label" for="formGroupInput">Email
 		    			</label>
 		    			<div class="col-sm-5">
-		      				<input class="form-control" type="text" id="formGroupInputLarge" placeholder="Email">
-		   		 		</div>
-		  			</div>
-
-		  			<div class="form-group">
-		    			<label class="col-sm-3 control-label" for="formGroupInput">Password
-		    			</label>
-		    			<div class="col-sm-5">
-								<input type="password" id="inputPassword" class="form-control" placeholder="Password" disabled>
-		   		 		</div>
-		  			</div>
-
-		  			<div class="form-group">
-		    			<label class="col-sm-3 control-label" for="formGroupInput">Password Confirm
-		    			</label>
-		    			<div class="col-sm-5">
-								<input type="password" id="inputPassword" class="form-control" placeholder="Password Confirm" disabled>
+		      				<input class="form-control" type="text" id="formGroupInputLarge" value="CaitlynLee@illinois.edu" placeholder="Email" disabled>
 		   		 		</div>
 		  			</div>
 
@@ -75,7 +59,7 @@
 		    			<label class="col-sm-3 control-label" for="formGroupInput">Height
 		    			</label>
 		    			<div class="col-sm-5">
-		      				<input class="form-control" type="text" id="formGroupInputLarge" placeholder="Height">
+		      				<input class="form-control" type="text" id="formGroupInputLarge" value="5'6''" placeholder="Height">
 		   		 		</div>
 		  			</div>
 
@@ -83,7 +67,7 @@
 		    			<label class="col-sm-3 control-label" for="formGroupInput">Weight
 		    			</label>
 		    			<div class="col-sm-5">
-		      				<input class="form-control" type="text" id="formGroupInputLarge" placeholder="Weight">
+		      				<input class="form-control" type="text" id="formGroupInputLarge"  value="100lb" placeholder="Weight">
 		   		 		</div>
 		  			</div>
 
@@ -91,17 +75,33 @@
 		    			<label class="col-sm-3 control-label" for="formGroupInput">Age
 		    			</label>
 		    			<div class="col-sm-5">
-		      				<input class="form-control" type="text" id="formGroupInputLarge" placeholder="Age">
+		      				<input class="form-control" type="text" id="formGroupInputLarge" value="20" placeholder="Age">
 		   		 		</div>
 		  			</div>
+
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="formGroupInput">Password
+              </label>
+              <div class="col-sm-5">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="formGroupInput">Password Confirm
+              </label>
+              <div class="col-sm-5">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password Confirm" required>
+              </div>
+            </div>
 						<br>
 			  		<br>
 						<div class="form-group">
 							<div class="col-sm-3"></div>
 							<div class="col-sm-5">
 								<div class="pull-right">
-									<button type="submit" class="btn btn-primary">Save</button>
-									<button type="submit" class="btn btn-default">Cancel</button>
+									<button type="sumbit" class="btn btn-primary">Save</button><a>
+									<a href="dashboard"><button type="button" class="btn btn-danger">Cancel</button><a>
 								</div>
 							</div>
 						</div>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include partials/head %>
+</head>
+<body>
+	<% include partials/header %>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-1">
+					<h1>
+						<b>Edit Community<br>
+						</b>
+					</h1>
+			</div>
+		</div>
+
+		<br>
+		<div class="row">
+      <div class="col-xs-4 col-xs-offset-1">
+        <div class="panel panel-default">
+            <div class="panel-heading c-list">
+                <span class="title">Members</span>
+                <ul class="pull-right c-controls">
+                    <a href="#" class="hide-search" data-command="toggle-search" data-toggle="tooltip" data-placement="top" title="Toggle Search"><i class="glyphicon glyphicon-search"></i></a>
+                </ul>
+            </div>
+
+            <div class="row" style="display: none;">
+                <div class="col-xs-12">
+                  <div class="input-group c-search">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" disabled><span class="glyphicon glyphicon-search"></span></button>
+                    </span>
+                    <input type="text" class="form-control" id="contact-list-search" placeholder="Search for...">
+                  </div>
+                </div>
+            </div>
+
+            <ul class="list-group contact-list" id="contact-list">
+                <li class="list-group-item">
+                  <div class="media-left">
+                        <img src="image/people/m1.jpg" alt="Scott Stevens"class="media-object img-circle" style="width:60px; height:60px;"  />
+                    </div>
+                    <div class="media-body media-middle">
+                        <span class="name" style="padding-left:1em;">Scott Stevens</span>
+                    </div>
+                    <div class="media-right">
+                      <button class="btn btn-default glyphicon glyphicon-ok" style="border:0px solid transparent;" type="button"></button>
+                      <button class="btn btn-default glyphicon glyphicon-remove" style="border:0px solid transparent;" type="button"></button>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="list-group-item">
+                  <div class="media-left">
+                        <img src="image/people/m2.jpg" alt="Seth Frazier" class="media-object img-circle" style="width:60px; height:60px;" />
+                    </div>
+                    <div class="media-body media-middle">
+                        <span class="name" style="padding-left:1em;">Seth Frazier</span>
+                    </div>
+                    <div class="media-right">
+                      <button class="btn btn-default glyphicon glyphicon-ok" style="border:0px solid transparent;" type="button"></button>
+                      <button class="btn btn-default glyphicon glyphicon-remove" style="border:0px solid transparent;" type="button"></button>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="list-group-item">
+                  <div class="media-left">
+                        <img src="image/people/w1.jpg" alt="Jean Myers" class="media-object img-circle" style="width:60px; height:60px;"  />
+                    </div>
+                    <div class="media-body media-middle">
+                        <span class="name" style="padding-left:1em;">Jean Myers</span>
+                    </div>
+                    <div class="media-right">
+                      <button class="btn btn-default glyphicon glyphicon-ok" style="border:0px solid transparent;" type="button"></button>
+                      <button class="btn btn-default glyphicon glyphicon-remove" style="border:0px solid transparent;" type="button"></button>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="list-group-item">
+                  <div class="media-left">
+                        <img src="image/people/m4.jpg" alt="Todd Shelton" class="media-object img-circle" style="width:60px; height:60px;" />
+                    </div>
+                    <div class="media-body media-middle">
+                        <span class="name" style="padding-left:1em;">Todd Shelton</span>
+                    </div>
+                    <div class="media-right">
+                      <button class="btn btn-default glyphicon glyphicon-ok" style="border:0px solid transparent;" type="button"></button>
+                      <button class="btn btn-default glyphicon glyphicon-remove" style="border:0px solid transparent;" type="button"></button>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="list-group-item">
+                    <div class="media-left">
+                        <img src="image/people/w5.jpg" alt="Rosemary Porter" class="media-object img-circle" style="width:60px; height:60px;" />
+                    </div>
+                    <div class="media-body media-middle">
+                        <span class="name" style="padding-left:1em;">Rosemary Porter</span>
+                    </div>
+                    <div class="media-right media-middle">
+                      <button class="btn btn-default glyphicon glyphicon-minus" style="border:0px solid transparent;" type="button"></button>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </li>
+                <li class="list-group-item">
+                  <div class="media-left">
+                        <img src="image/people/w2.jpg" alt="Debbie Schmidt" class="media-object img-circle" style="width:60px; height:60px;" />
+                    </div>
+                    <div class="media-body media-middle">
+                        <span class="name" style="padding-left:1em;">Debbie Schmidt</span>
+                    </div>
+                    <div class="media-right media-middle">
+                      <button class="btn btn-default glyphicon glyphicon-minus" style="border:0px solid transparent;" type="button"></button>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="list-group-item">
+                  <div class="media-left">
+                        <img src="image/people/w4.jpg" alt="Glenda Patterson"class="media-object img-circle" style="width:60px; height:60px;" />
+                    </div>
+                    <div class="media-body media-middle">
+                        <span class="name" style="padding-left:1em;">Glenda Patterson</span>
+                    </div>
+                    <div class="media-right media-middle">
+                      <button class="btn btn-default glyphicon glyphicon-minus" style="border:0px solid transparent;" type="button"></button>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+            </ul>
+        </div>
+
+      </div>
+      <div class="col-xs-6 col-xs-offset-0">
+    		<form class="form-horizonta" action="/community">
+    			<div class="form-group row">
+    					<label for="inputEmail3" class="col-md-4 control-label">Community Name</label>
+    					<div class="col-md-8">
+    						<input type="text" class="form-control" placeholder="Community Name" value="IEEE" required>
+    					</div>
+    			</div>
+    			<div class="form-group row">
+    					<label for="inputEmail3" class="col-md-4 control-label">Desscription</label>
+    					<div class="col-md-8">
+    						<textarea class="form-control" rows="3" style="height:18em"placeholder="Description"required>Institute of Electrical and Electronics Engineers</textarea>
+    					</div>
+    			</div>
+    			<div class="form-group row">
+    					<label for="inputEmail3" class="col-md-4 control-label">Invite Friends</label>
+    					<div class="col-md-8">
+    						<div class="input-group input-group-md">
+    							<span class="input-group-addon" id="sizing-addon1">+</span>
+    							<input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+    						</div>
+    					</div>
+    			</div>
+    			<div class="form-group row">
+    				<label for="inputEmail3" class="col-md-4 control-label">Logo</label>
+    				<div class="col-md-8">
+    					<div style="height:0px;overflow:hidden">
+    						<input type="file" id="fileInput" name="fileInput" />
+    					</div>
+    					<button type="button" class="btn btn-default" onclick="chooseFile();">
+    						Choose file
+    					</button>
+    					<script>
+    						 function chooseFile() {
+    								$("#fileInput").click();
+    						 }
+    					</script>
+    				</div>
+    			</div>
+    			<div class="form-group row">
+    				<label for="inputEmail3" class="col-md-4 control-label"></label>
+    				<div class="col-md-8">
+    					<div class="pull-right">
+    						<button type="submit" class="btn btn-primary">Create</button>
+    						<a href="community"><button type="button" class="btn btn-danger">Cancel</button><a>
+    					</div>
+    				</div>
+    			</div>
+    		</form>
+  		</div>
+	</div>
+	<% include partials/footer %>
+  <script src="http://rawgit.com/stidges/jquery-searchable/master/dist/jquery.searchable-1.0.0.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      /* BOOTSNIPP FULLSCREEN FIX */
+      if (window.location == window.parent.location) {
+          $('#back-to-bootsnipp').removeClass('hide');
+      }
+
+
+      $('[data-toggle="tooltip"]').tooltip();
+
+      $('#fullscreen').on('click', function(event) {
+          event.preventDefault();
+          window.parent.location = "http://bootsnipp.com/iframe/4l0k2";
+      });
+      $('a[href="#cant-do-all-the-work-for-you"]').on('click', function(event) {
+          event.preventDefault();
+          $('#cant-do-all-the-work-for-you').modal('show');
+      })
+
+      $('[data-command="toggle-search"]').on('click', function(event) {
+          event.preventDefault();
+          $(this).toggleClass('hide-search');
+
+          if ($(this).hasClass('hide-search')) {
+              $('.c-search').closest('.row').slideUp(100);
+          }else{
+              $('.c-search').closest('.row').slideDown(100);
+          }
+      })
+
+      $('#contact-list').searchable({
+          searchField: '#contact-list-search',
+          selector: 'li',
+          childSelector: '.col-xs-12',
+          show: function( elem ) {
+              elem.slideDown(100);
+          },
+          hide: function( elem ) {
+              elem.slideUp( 100 );
+          }
+      })
+  });
+  </script>
+</body>
+</html>

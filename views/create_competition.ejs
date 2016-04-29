@@ -10,14 +10,14 @@
 		<h1><b> Create Competition </b></h1>
 		<br><br>
 		<div class="container">
-		<form class="form-horizontal">
+		<form class="form-horizontal" action="dashboard">
 		<fieldset>
 
 		<!-- Text input-->
 		<div class="form-group">
 		  <label class="col-md-4 control-label" for="textinput">Competition Name</label>
 		  <div class="col-md-4">
-		  <input id="textinput" name="textinput" type="text" placeholder="Competition Name" class="form-control input-md">
+		  <input id="textinput" name="textinput" type="text" placeholder="Competition Name" class="form-control input-md" required>
 
 		  </div>
 		</div>
@@ -27,7 +27,7 @@
 		  <label class="col-md-4 control-label" for="textinput">Start Date</label>
 		  <div class="col-md-4">
 				<form action="action_page.php">
-					<input name="textinput" type="date" placeholder="Start Date" class="form-control input-md">
+					<input name="textinput" type="date" placeholder="Start Date" class="form-control input-md" required>
 				</form>
 		  </div>
 		</div>
@@ -36,7 +36,7 @@
 		  <label class="col-md-4 control-label" for="textinput">End Date</label>
 		  <div class="col-md-4">
 				<form action="action_page.php">
-					<input name="textinput" type="date" placeholder="End Date" class="form-control input-md">
+					<input name="textinput" type="date" placeholder="End Date" class="form-control input-md" required>
 				</form>
 			</div>
 		</div>
@@ -45,7 +45,7 @@
 		<div class="form-group">
 		  <label class="col-md-4 control-label" for="textinput">Goal</label>
 		  <div class="col-md-4">
-		  <input id="textinput" name="textinput" type="text" placeholder="Goal" class="form-control input-md">
+		  <input id="textinput" name="textinput" type="text" placeholder="Goal" class="form-control input-md" required>
 
 		  </div>
 		</div>
@@ -53,7 +53,7 @@
 		<div class="form-group">
 			<label class="col-md-4 control-label" for="selectbasic">Charity</label>
 		  <div class="col-md-4">
-		    <select id="selectbasic" name="selectbasic" class="form-control">
+		    <select id="selectbasic" name="selectbasic" class="form-control" required>
 					<option value="Other">Other</option>
 		      <option value="A Child's Wish Association of America">A Child's Wish Association of America</option>
 		      <option value="AMVETS National Headquarters">AMVETS National Headquarters</option>
@@ -67,7 +67,7 @@
 		<div class="form-group">
 		  <label class="col-md-4 control-label" for="selectbasic">Set Incentive</label>
 		  <div class="col-md-4">
-				<input id="textinput" name="textinput" type="text" placeholder="Incentive" class="form-control input-md">
+				<input id="textinput" name="textinput" type="text" placeholder="Incentive" class="form-control input-md" required>
 		  </div>
 		</div>
 
@@ -75,24 +75,32 @@
 		<div class="form-group">
 		  <label class="col-md-4 control-label" for="textarea">Description</label>
 		  <div class="col-md-4">
-		    <textarea class="form-control" id="textarea" name="textarea" placeholder="Description"></textarea>
+		    <textarea class="form-control" id="textarea" name="textarea" placeholder="Description" required></textarea>
 		  </div>
 		</div>
 
 		<div class="form-group">
-			<div class="panel with-nav-tabs col-md-4 col-md-offset-4">
-			<div class="panel-heading">
-				<ul class="nav nav-tabs">
-					<li class="active"><a href="#tab1default" data-toggle="tab">Individual competition</a></li>
-					<li><a href="#tab2default" data-toggle="tab">Group competition</a></li>
-				</ul>
+			<label class="col-md-4 control-label" for="textarea">Type of Competition</label>
+			<div class="panel col-md-4">
+			<div class="panel-heading" style="padding: 0">
+				<div class="btn-group btn-group-justified" role="group" aria-label="...">
+				  <div class="btn-group" role="group">
+				    <button type="button" class="btn btn-default" href="#tab1default" data-toggle="tab">Individual</button>
+				  </div>
+				  <div class="btn-group" role="group">
+				    <button type="button" class="btn btn-default" href="#tab2default" data-toggle="tab">Group</button>
+				  </div>
+				</div>
 			</div>
-			<div class="panel-body">
+			<div class="panel-body" style="padding-left: 0; padding-right: 0">
 				<div class="tab-content">
-					<div class="tab-pane fade in active" id="tab1default">
+					<div class="tab-pane fade" id="tab1default">
 						<div class="input-group">
 							<span class="input-group-addon"><span class="glyphicon glyphicon-plus"></span></span>
 								<input type="text" class="form-control" placeholder="Name" aria-describedby="sizing-addon2">
+						</div>
+						<div class="checkbox">
+						  <label><input type="checkbox" value="">User can invite guests</label>
 						</div>
 					</div>
 					<div class="tab-pane fade" id="tab2default">
@@ -105,23 +113,20 @@
 							<span class="input-group-addon"><span class="glyphicon glyphicon-plus"></span> Group2</span>
 								<input type="text" class="form-control" placeholder="Name" aria-describedby="sizing-addon2">
 						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" value="">Users can invite guests</label>
+						</div>
 					</div>
 				</div>
 			</div>
+			</div>
+			<label class="col-md-5 control-label" for="singlebutton"></label>
+			<div class="col-md-5 pull-right">
+				<button type="submit" class="btn btn-primary">Create</button>
+				<a href="dashboard"><button type="button" class="btn btn-danger">Cancel</button><a>
+			</div>
 		</div>
-		</div>
 
-
-
-
-		<!-- Button -->
-		<div class="form-group">
-		  <label class="col-md-5 control-label" for="singlebutton"></label>
-		  <div class="col-md-5 pull-right">
-		    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Create</button>
-				<button id="singlebutton" name="singlebutton" class="btn btn-danger">Cancel</button>
-		  </div>
-		</div>
 
 		</fieldset>
 		</form>

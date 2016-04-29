@@ -18,6 +18,10 @@ router.get('/community', function(req, res, next) {
   res.render('community');
 });
 
+router.get('/edit_community', function(req, res, next) {
+  res.render('edit_community');
+});
+
 router.get('/group_detail', function(req, res, next) {
   res.render('group_detail');
 });
