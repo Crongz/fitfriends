@@ -1,0 +1,17 @@
+Hello Eric,
+
+I have deployed our website onto https://fit-friends.herokuapp.com/
+So you can just simply clicked the link to see what we have done.
+If the link is not available, then you can install Node.js and run app node.js in the folder.
+
+## All pages ##
+Home page -|-> Login    -> Dashboard -|-> Navigation bar
+           |-> Sign Up                |-> Create Competition
+                                      |-> Individual/ Group Competition
+
+Navigation bar -> Community -|-> Create Community
+                             |-> Edit Community
+               -> Profile
+
+
+*To login, you can just put random email and password.
